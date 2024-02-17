@@ -4,18 +4,15 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: repeat(3, 150px);
-    height: 500px;
-    border: 10px solid black;
-    /* justify-items: center; */
-    /* align-items: start; */
-    /* justify-content: start; */
-    /* align-content: end; */
-
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
-.item-4 {
-    justify-self: stretch;
-    align-self: stretch;
+.grid-item {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
