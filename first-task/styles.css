@@ -4,38 +4,18 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(3, 150px);
-    gap: 20px;
-    grid-template-areas: 
-    'h h h h'
-    'm m . s'
-    'f f f f'
-    ;
+    height: 500px;
+    border: 10px solid black;
+    /* justify-items: center; */
+    /* align-items: start; */
+    /* justify-content: start; */
+    /* align-content: end; */
+
 }
 
-.header {
-    grid-area: h;
-}
-
-.main {
-    grid-area: m;
-}
-
-.sidebar {
-    grid-area: s;
-}
-
-.footer {
-    grid-area: f;
-}
-
-@media (max-width: 700px) {
-    .container {
-        grid-template-areas: 
-        's h h h'
-        's m m m'
-        's f f f'
-        ;
-    }
+.item-4 {
+    justify-self: stretch;
+    align-self: stretch;
 }
